@@ -1,0 +1,54 @@
+{
+  "name": "",
+  "version": "1.0.0-alpha",
+  "description": "",
+  "main": "app.js",
+  "type": "commonjs",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "NODE_ENV=test NODE_NO_WARNINGS=1 NODE_OPTIONS='--experimental-modules' nyc ava && xo",
+    "watch": "NODE_ENV=test NODE_NO_WARNINGS=1 NODE_OPTIONS='--experimental-modules' nyc ava --watch",
+    "start": "NODE_ENV=production NODE_NO_WARNINGS=1 NODE_OPTIONS='--experimental-modules' app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@crafting.mindkeeper.solutions:mindkeeper-solutions/familarious.git"
+  },
+  "keywords": [],
+  "author": "florian.breisch@mindkeeper.solutions",
+  "license": "MIT",
+  "engines": {
+    "node": "~12"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "ava": "*",
+    "nyc": "*",
+    "xo": "*"
+  },
+  "xo": {
+    "semicolon": false,
+    "rules": {
+      "import/extensions": 0,
+      "no-unused-vars": [
+        "error",
+        {
+          "argsIgnorePattern": "^_"
+        }
+      ]
+    },
+    "overrides": [
+      {
+        "files": [],
+        "globals": []
+      }
+    ]
+  },
+  "ava": {
+    "verbose": true,
+    "babel": false,
+    "compileEnhancements": true
+  }
+}
