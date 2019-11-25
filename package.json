@@ -1,8 +1,8 @@
 {
-  "name": "",
+  "name": "rec",
   "version": "1.0.0-alpha",
-  "description": "",
-  "main": "app.js",
+  "description": "Primitive model toolset delivered as base class for your models.",
+  "main": "base.mjs",
   "type": "commonjs",
   "directories": {
     "test": "test"
@@ -22,9 +22,13 @@
   "engines": {
     "node": "~12"
   },
-  "dependencies": {},
+  "dependencies": {
+    "ajv": "^6.10.2",
+    "lodash.merge": "^4.6.2"
+  },
   "devDependencies": {
     "ava": "*",
+    "lodash.isequal": "^4.5.0",
     "nyc": "*",
     "xo": "*"
   },
