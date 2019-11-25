@@ -1,16 +1,23 @@
-# rec
+# rec.base
 
-Minimal ECMAScript-module facilitating model-framework to support a workflow without magic.
+Minimal ECMAScript-module facilitating model-framework to support a straight-forward workflow without magic.
 
 Features:
 
+- Leaves JS class- and objectfunctionality as it is
 - Allows PlainObject instantiation as class
 - Validates class at instantiation using (cached) AJV-validators
+
+#### Install
+
+```
+npm i --save @florianb/rec
+```
 
 ## Usage
 
 ```js
-import Base from 'rec'
+import Base from '@florianb/rec'
 
 class FellowShipOfTheRing extends Base {
 	static get schema() {
