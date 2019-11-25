@@ -1,4 +1,4 @@
-# rec.base
+# rec
 
 Minimal ECMAScript-module facilitating model-framework to support a straight-forward workflow without magic.
 
