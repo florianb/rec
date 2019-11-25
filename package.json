@@ -1,6 +1,6 @@
 {
   "name": "@florianb/rec",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Primitive model toolset delivered as base class for your models.",
   "main": "base.mjs",
   "type": "commonjs",
